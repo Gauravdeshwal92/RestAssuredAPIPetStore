@@ -1,5 +1,7 @@
 package com.petStore.Pojo.Pet;
 
+import java.util.List;
+
 public class Tags {
 
     public int id;

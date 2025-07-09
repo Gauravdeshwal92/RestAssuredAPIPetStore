@@ -20,7 +20,7 @@ public class JsonReader {
 
         try {
             // pass the path of testdata.json file
-            File file = new File("/resources/test.json");
+            File file = new File("resources/test.json");
             //read the file into string
             String json = readFileToString(file, "UTF-8");
             //parse the string into object

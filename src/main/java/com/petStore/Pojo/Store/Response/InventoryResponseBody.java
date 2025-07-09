@@ -1,6 +1,6 @@
 package com.petStore.Pojo.Store.Response;
 
-public class Inventory {
+public class InventoryResponseBody {
 
     public String sold;
     public String SOLD;

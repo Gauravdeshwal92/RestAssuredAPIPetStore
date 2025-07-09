@@ -12,15 +12,16 @@ import org.testng.annotations.BeforeSuite;
 import java.io.IOException;
 
 
-public class BaseTest {
+public class BaseTest extends BaseTestHelper{
 
     @BeforeSuite(alwaysRun = true)
     public void config() throws IOException {
         //Create the path in which we will create folder to keep html reports
         String subfolderpath = System.getProperty("user.dir") + "/reports/" + BaseTestHelper.Timestamp();
         //create sub folder
-        BaseTestHelper.CreateFolder(subfolderpath);
+        CreateFolder(subfolderpath);
         ExtentReport.initialize(subfolderpath + "/" + "API_Execution_Automation.html");
+
     }
     @AfterMethod(alwaysRun = true)
     public void getResult(ITestResult result) {

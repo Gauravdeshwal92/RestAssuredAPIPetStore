@@ -1,6 +1,11 @@
-package com.petStore.Pojo.Store.Request;
+package com.petStore.Pojo.Store.Response;
 
-public class Store {
+public class StoreorderResponseBody {
+
+    public int id;
+    public String petId;
+    public String quantity;
+
     public int getId() {
         return id;
     }
@@ -9,36 +14,36 @@ public class Store {
         this.id = id;
     }
 
-    public int getPetId() {
+    public String getPetId() {
         return petId;
     }
 
-    public void setPetId(int petId) {
+    public void setPetId(String petId) {
         this.petId = petId;
     }
 
-    public int getQuantity() {
+    public String getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
+    public void setQuantity(String quantity) {
         this.quantity = quantity;
     }
 
-    public String getShipdate() {
-        return shipdate;
+    public String getDate() {
+        return date;
     }
 
-    public void setShipdate(String shipdate) {
-        this.shipdate = shipdate;
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public String getStatus() {
-        return Status;
+        return status;
     }
 
     public void setStatus(String status) {
-        Status = status;
+        this.status = status;
     }
 
     public String getComplete() {
@@ -49,10 +54,8 @@ public class Store {
         this.complete = complete;
     }
 
-    public int id;
-    public int petId;
-    public int quantity;
-    public String shipdate;
-    public String Status;
+    public String date;
+    public String status;
     public String complete;
+
 }

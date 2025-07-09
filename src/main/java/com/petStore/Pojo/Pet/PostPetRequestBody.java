@@ -3,7 +3,7 @@ package com.petStore.Pojo.Pet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Pet {
+public class PostPetRequestBody {
 
     public int getId() {
         return id;
@@ -29,11 +29,11 @@ public class Pet {
         this.name = name;
     }
 
-    public String[] getPhotUrls() {
+    public List<String> getPhotUrls() {
         return photUrls;
     }
 
-    public void setPhotUrls(String[] photUrls) {
+    public void setPhotUrls(List<String> photUrls) {
         this.photUrls = photUrls;
     }
 
@@ -56,7 +56,7 @@ public class Pet {
     public int id;
     public Category category;
     public String name;
-    public String[] photUrls;
+    public List<String> photUrls;
     public String status;
     public List<Tags> tags;
 }
